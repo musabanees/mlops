@@ -22,7 +22,9 @@ stages:
     outs:
       - data/features 
 
-
+# We need to add params to track the model type and its hyperparameters
+# so that when we change the model or its hyperparameters, DVC can track those changes
+# and rerun the model_building stage accordingly.
   model_building:
     cmd: python src/model_building.py
     deps:
@@ -39,13 +41,20 @@ stages:
           cache: false
 
 
-  
-  # model_evaluation:
-  #   cmd: python src/model_evaluation.py
-  #   deps:
-  #       - model.pkl
-  #       - src/model_evaluation.py
-  #   metrics:
-  #       - metrics.json
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+        - models/
+        - src/model_evaluation.py
+    params:
+      - params.yaml: 
+          - Model
+          - experiments
+    metrics:
+      - reports/test_metrics.json:
+          cache: false
+    plots:
+      - reports/figures/confusion_matrix_*.png
+      - reports/figures/roc_curve_*.png
 
 
