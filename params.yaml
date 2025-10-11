@@ -1,3 +1,6 @@
+# Ran the command to select different models for experiments
+# dvc exp run -S experiments.Model=random_forest
+# dvc exp run -S experimen
 experiments:
   Model: random_forest     # default model experiment
 
