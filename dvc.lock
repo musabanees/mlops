@@ -5,5 +5,11 @@ stages:
     deps:
     - path: src/data_injestion.py
       hash: md5
-      md5: 2079a4c5111cb137a8bf0e1ef6ac8b55
-      size: 2087
+      md5: 0467ef2972d523611772572ba248235a
+      size: 2025
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 6d7c9717b531961233cd66af69381384.dir
+      size: 817597
+      nfiles: 2
