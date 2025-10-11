@@ -1,0 +1,9 @@
+{
+    "model": "random_forest",
+    "train_accuracy": 0.6832148451620678,
+    "train_precision": 0.7158187697934234,
+    "train_recall": 0.6832148451620678,
+    "train_f1": 0.671912002589288,
+    "n_estimators": 100,
+    "max_depth": 10
+}
