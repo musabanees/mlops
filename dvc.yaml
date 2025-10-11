@@ -1,0 +1,7 @@
+stages:
+  data_injestion:
+    cmd: python src/data_injestion.py
+    deps:
+    - src/data_injestion.py
+    outs:
+    - data/raw

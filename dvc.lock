@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  data_injestion:
+    cmd: python src/data_injestion.py
+    deps:
+    - path: src/data_injestion.py
+      hash: md5
+      md5: 2079a4c5111cb137a8bf0e1ef6ac8b55
+      size: 2087
