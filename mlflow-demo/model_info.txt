@@ -1,0 +1,5 @@
+ElasticNet Model
+Alpha: 0.5
+L1 Ratio: 0.5
+Training RMSE: 0.793164022927685
+Training R2: 0.10862644997792636
