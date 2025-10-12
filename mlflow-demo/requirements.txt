@@ -1,2 +1,2 @@
-mlflow
+mlflow==2.22.0
 dagshub
