@@ -1,0 +1,28 @@
+# Git / Version Control
+**/.git
+**/.gitignore
+
+# Development Environment & Editor Settings
+**/.vscode
+**/venv
+**/env
+
+# Test / Coverage Reports
+**/coverage
+
+# Credentials & Secrets (CRITICAL)
+**/.env
+**/.aws
+**/.ssh
+
+# Documentation
+README.md
+
+# Orchestration
+docker-compose.yml
+
+# OS-specific files
+**/.DS_Store
+
+# Docker File
+dockerfile
